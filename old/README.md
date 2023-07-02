@@ -1,2 +1,2 @@
-# linktree-clone-css-js
-Build a Linktree Clone! (super simple!) HTML + CSS (+ JS optional)
+# Selfhosted linktree
+Modified using https://github.com/kubowania/linktree-clone-css-js as a basis
