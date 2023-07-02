@@ -1,0 +1,150 @@
+.imgleft {
+	float: left;
+	margin-right: 24px;
+}
+
+.fa-brands, .fa-solid {
+	width: 22px;
+	text-align: center;
+}
+
+.topbar {
+	height:42px;
+	background-color: #FFB981;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+.bottombar {
+	height:42px;
+	background-color: #813405;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+
+/* Essentials */
+
+html {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: #DDD;
+	color: #000;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+@media only screen and (max-width: 800px) {
+    html{
+        background-color: #DDD;
+		width: 90%;
+		margin: auto;
+		font-size: 0.8em;
+    }
+}
+
+body {
+    padding: none;
+	margin: none;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    margin-bottom: 5px;
+	background: #FFF;
+	border: 2px solid #813405;
+	border-radius: 10px;
+	padding: 5px;
+	transition: 0.4s ease-in-out;
+}
+
+li:hover {
+	transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+h3 {
+	margin-bottom: 4px;
+}
+
+a {
+	color: #000;
+    text-decoration: none;
+	font-size: 1.1em;
+}
+
+.root{
+    width: 50%;
+	min-width: 750px;
+    margin: auto;
+	background: #FFF;
+	border: 2px solid #813405;
+	border-radius: 10px;
+}
+@media only screen and (max-width: 800px) {
+    .root{
+        width: 100%;
+		min-width: 200px;
+    }
+}
+
+.vcenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+body{
+    height: 98vh;
+}
+
+
+/* Additional rows */
+
+.grid {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 !important;
+    width: 100% !important;
+}
+@media only screen and  (min-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+    }
+}
+.box {
+    background: #FFF;
+    border-radius: 10px;
+    margin-top: 15px;
+	min-width: 300px;
+	padding: 0px 30px;
+}
+
+.grid > * {
+    min-width: 0;
+}
+
+.right {
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+}

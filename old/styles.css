@@ -38,13 +38,14 @@ body {
 .tile {
     width: 100%;
     background-color: #FFF;
-    margin: 7px;
+    margin-bottom: 10px;
 	border: 2px solid #813405;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
     transition: 0.4s ease-in-out;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .tile:hover {
@@ -55,20 +56,16 @@ body {
 .tile-share-button {
     margin: 8px;
     width: 40px;
-    height: 40px;
 }
 
 .share-button {
     width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(240,240,240);
 }
 
 .icon {
     margin: 4px 8px;
     width: 44px;
-    height: 44px;
+	font-size: 2.1em;
 }
 
 /* Others */
@@ -99,4 +96,11 @@ a {
 
 .bio {
     padding-bottom: 20px;
+}
+
+.note {
+	text-align:center;
+	font-size: 0.8em;
+	margin-top: -15px;
+	margin-bottom: 10px;
 }
