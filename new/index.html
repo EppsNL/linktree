@@ -17,7 +17,8 @@
             <div class="box">
 				<img src="img/avatar.png" height="128px" alt="EppsNL avatar" class="imgleft" />
 				<h1>EppsNL (Kevin)</h1>
-				<p class="bio">Just a creative idiot enjoying his life</p>
+				<p class="bio">Just a creative idiot enjoying his life and hyperfixations.<br />
+				♂️/<span id="ageOutput">age</span>/🇳🇱</p>
 			</div>
 		</div>
 
@@ -61,13 +62,11 @@
 							<i class="fa-brands fa-x-twitter" style="color: #000;"></i> X / Twitter
 						</li>
 					</a>
-					<!-- Bluesky, reserved for once I get my invite
-					<a href="#">
+					<a href="https://bsky.app/profile/eppsnl.bsky.social">
 						<li>
-							<i class="fa-solid fa-square" style="color: #0083FE;"></i> X / Bluesky.social
+							<i class="fa-solid fa-square" style="color: #0083FE;"></i> Bluesky.social
 						</li>
 					</a>
-					-->
 					<a href="https://www.instagram.com/eppsnl/">
 						<li>
 							<i class="fa-brands fa-instagram" style="color: #B92C63;"></i> Instagram
@@ -106,5 +105,20 @@
 
 <div class="topbar" />
 <div class="bottombar" />
+<!-- Current age calculation -->
+<script>
+        // yyyy-mm-dd
+        var birthdateString = '1990-11-01';
+
+        // Calculate the age
+        var birthdate = new Date(birthdateString);
+        var currentDate = new Date();
+        var ageInMilliseconds = currentDate - birthdate;
+        var ageInYears = Math.floor(ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
+
+        // Display the age on the webpage
+        var ageOutputElement = document.getElementById('ageOutput');
+        ageOutputElement.textContent = ageInYears;
+    </script>
 </body>
 </html>
