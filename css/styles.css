@@ -1,3 +1,7 @@
+/* import webfonts */
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-adventor');
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+
 .imgleft {
 	float: left;
 	margin-right: 24px;
@@ -9,8 +13,8 @@
 }
 
 .topbar {
-	height:42px;
-	background-color: #FFB981;
+	height:50px;
+	background-color: #813405;
 	width: 100vw;
 	margin: 0px;
 	padding: 0px;
@@ -22,7 +26,7 @@
 
 .bottombar {
 	height:42px;
-	background-color: #813405;
+	background-color: #C95C03;
 	width: 100vw;
 	margin: 0px;
 	padding: 0px;
@@ -39,13 +43,13 @@ html {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    background-color: #DDD;
-	color: #000;
-	font-family: Verdana, Tahoma, sans-serif;
+    background-color: #2E2E2E;
+	color: #FFFFEB;
+	font-family: 'Raleway', sans-serif;
 }
 @media only screen and (max-width: 800px) {
     html{
-        background-color: #DDD;
+        background-color: #2E2E2E;
 		width: 90%;
 		margin: auto;
 		font-size: 0.8em;
@@ -65,8 +69,8 @@ ul {
 
 li {
     margin-bottom: 5px;
-	background: #FFF;
-	border: 2px solid #813405;
+	background: none;
+	border: 2px solid #FFFFEB;
 	border-radius: 10px;
 	padding: 5px;
 	transition: 0.4s ease-in-out;
@@ -77,22 +81,26 @@ li:hover {
     transform: scale(1.02);
 }
 
-h3 {
-	margin-bottom: 4px;
+h1, h3 {
+	font-family: 'TeXGyreAdventor', sans-serif;
+	font-weight: 700;
+	margin-bottom: 0px;
 }
 
 a {
-	color: #000;
+	color: #FC9E4F;
     text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1em;
+	font-weight: 700;
+	font-family: 'TeXGyreAdventor', sans-serif;
 }
 
 .root{
     width: 50%;
 	min-width: 750px;
     margin: auto;
-	background: #FFF;
-	border: 2px solid #813405;
+	background: none;
+	border: 2px solid #FFFFEB;
 	border-radius: 10px;
 }
 @media only screen and (max-width: 800px) {
@@ -132,7 +140,7 @@ body{
     }
 }
 .box {
-    background: #FFF;
+    background: none;
     border-radius: 10px;
     margin-top: 15px;
 	min-width: 300px;
