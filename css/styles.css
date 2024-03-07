@@ -81,10 +81,17 @@ li:hover {
     transform: scale(1.02);
 }
 
-h1, h3 {
+h1 {
 	font-family: 'TeXGyreAdventor', sans-serif;
 	font-weight: 700;
 	margin-bottom: 0px;
+}
+
+h3 {
+	font-family: 'TeXGyreAdventor', sans-serif;
+	font-weight: 700;
+	margin-bottom: 0px;
+	margin-top: -15px;
 }
 
 a {
@@ -133,6 +140,8 @@ body{
     grid-template-columns: 1fr;
     margin: 0 !important;
     width: 100% !important;
+	background: #2E2E2E;
+    border-radius: 10px;
 }
 @media only screen and  (min-width: 800px) {
     .grid {
@@ -142,9 +151,8 @@ body{
 .box {
     background: none;
     border-radius: 10px;
-    margin-top: 15px;
-	min-width: 300px;
-	padding: 0px 30px;
+    min-width: 300px;
+	padding: 20px 20px;
 }
 
 .grid > * {
@@ -155,4 +163,8 @@ body{
     float: right;
     margin-top: 10px;
     margin-left: 20px;
+}
+
+.note {
+	font-size: 0.8em;
 }
